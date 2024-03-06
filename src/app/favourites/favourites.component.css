@@ -1,0 +1,15 @@
+.job-list-container {
+    display: flex;
+  }
+  
+  .job-list,
+  .favorite-jobs {
+    flex: 1 1 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .job-list,
+    .favorite-jobs {
+      flex: 1 0 100%;
+    }
+  }

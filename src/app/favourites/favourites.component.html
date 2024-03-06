@@ -1,0 +1,59 @@
+
+ <!-- <div *ngIf="favoriteService.favoriteJobs.length === 0"><h1>No favorite jobs</h1></div> -->
+
+ <div class="job-list-container">
+  
+    <div class="job-list" style="margin-left: 20px;">
+      <h2 style="color: darkslateblue;margin-left:250px;">Available Jobs</h2>
+     
+      <ul>
+        <li *ngFor="let job of jobs" style="list-style-type: none;">
+          <div class="job-details">
+            <img
+              *ngIf="job.logoUrl"
+              src="{{ job.logoUrl }}"
+              alt="{{ job.companyName }} Logo"
+              class="company-logo"
+              style="height: 80px; width: 80px; border-radius: 50%;"
+            />
+            <b><h2>{{ job.title }}</h2></b>
+           <b><p style="color:blue;">Company: {{ job.companyName }}</p></b>
+            <p>Salary: {{ job.salary }}</p>
+            <p>Description: {{ job.description }}</p>
+            <p>City: {{ job.city }}</p>
+            <p>Reference: {{ job.reference }}</p>
+            <button (click)="addToFavorites(job)" *ngIf="!isFavorite(job)" style="background-color: rgb(220, 224, 9);">Add to Favorites</button>
+            <button (click)="removeFromFavorites(job)" *ngIf="isFavorite(job)" style="background-color: rgb(239, 47, 14);height:20px;">Remove from Favorites</button>
+            <hr>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="favorite-jobs">
+      <h2 style="color: darkslateblue;margin-left:250px;">Favorite Jobs</h2>
+      <ul *ngIf="favoriteJobs.length > 0">
+        <li *ngFor="let job of favoriteJobs" style="list-style-type: none;">
+          <div class="job-details">
+            <img
+              *ngIf="job.logoUrl"
+              src="{{ job.logoUrl }}"
+              alt="{{ job.companyName }} Logo"
+              class="company-logo"
+              style="height: 80px; width: 80px; border-radius: 50%;"
+            />
+            <b><h2>{{ job.title }}</h2></b>
+            <b><p style="color:blue;">Company: {{ job.companyName }}</p></b>
+            <p>Salary: {{ job.salary }}</p>
+            <p>Description: {{ job.description }}</p>
+            <p>City: {{ job.city }}</p>
+            <p>Reference: {{ job.reference }}</p>
+            <!-- <button (click)="removeFromFavorites(job)" *ngIf="isFavorite(job)" style="background-color: rgb(239, 47, 14);">Remove from Favorites</button> -->
+            <hr>
+          </div>
+        </li>
+       
+      </ul>
+     <h1> <p *ngIf="favoriteJobs.length === 0">No Favorite Jobs Yet</p></h1>
+    </div>
+  </div>
