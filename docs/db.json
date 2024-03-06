@@ -1,0 +1,50 @@
+{
+    "joboffer": [
+      {
+        "title": "Data Analyst",
+        "companyName": "Microsoft",
+        "salary": "30k",
+        "description":" ata analysts are in great demand across various specialised fields like finance, healthcare, marketing, business, and the e-commerce sector as they play a decisive part in an organisation’s growth, development, and success.",
+        "city": " Phoenix ",
+        "reference": "UK",
+        "id": "1"
+      },
+      {
+        "title": "Software Developer",
+        "companyName": "Google",
+        "salary": "40k",
+        "description":"A job description for a software developer includes researching, designing, building, and managing computer and application software. They apply scientific and technological principles to user needs, write code, and ensure software functionality. These developers must know coding languages, have problem-solving and critical-thinking skills, and understand the software development process",
+        "city": " Banglore ",
+        "reference": "IN",
+        "id": "2"
+      },
+      {
+        "title": "Data Engineer",
+        "companyName": "Infosys",
+        "salary": "35k",
+        "description":"Data engineering is the practice of designing and building systems for collecting, storing, and analyzing data at scale. It is a broad field with applications in just about every industry. Organizations have the ability to collect massive amounts of data, and they need the right people and technology to ensure it is in a highly usable state by the time it reaches data scientists and analysts",
+        "city": " Pune ",
+        "reference": "UK",
+        "id": "3"
+      },
+      {
+        "title": "Software Engineer",
+        "companyName": "Techfocus",
+        "salary": "35k",
+        "description":"Software engineering is an engineering-based approach to software development. A software engineer is a person who applies the engineering design process to design, develop, test, maintain, and evaluate computer software. The term programmer is sometimes used as a synonym, but may emphasize software implementation over design and can also lack connotations of engineering education or skills.",
+        "city": " Ranchi",
+        "reference": "IN",
+        "id": "4"
+      },
+      {
+        "title": "Software Tester",
+        "companyName": "Google",
+        "salary": "50k",
+        "city": " Banglore ",
+        "description":"A software tester is a professional who validates software functionality against specified requirements. They identify bugs and issues, ensuring the software meets quality standards and user requirements. Their keen eye for detail and analytical skills are pivotal in optimizing software performance.",
+        "reference": "UK",
+        "id": "5"
+      }
+
+    ]
+}
