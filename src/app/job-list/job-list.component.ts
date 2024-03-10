@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { JobListService } from '../job-list.service';
 import { FavoriteService } from '../favourites.service';
 import { HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 const jobsData={
   "joboffer": [
@@ -81,11 +82,19 @@ export class JobListComponent implements OnInit {
 //     }
 //     )  
 //   }
-  
+ 
+constructor(private router: Router){
+
+}
+
 
 //using dummy data in json format
 jobs: any[] = [];
   ngOnInit(): void {
     this.jobs = jobsData.joboffer;  
+  }
+
+  next(){
+    this.router.navigate(['/favourites']);
   }
 }
